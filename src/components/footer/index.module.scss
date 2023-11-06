@@ -1,0 +1,126 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  .copyright {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 32px;
+    border-top: 1px solid #f0f0f0;
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 14px;
+    .left {
+      display: flex;
+      column-gap: 5px;
+      flex-direction: row;
+    }
+    .right {
+      display: flex;
+      column-gap: 16px;
+      a {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .split {
+        width: 1px;
+        height: 12px;
+        background: #f0f0f0;
+      }
+      .icp {
+        display: flex;
+        column-gap: 16px;
+      }
+      .other {
+        display: flex;
+        column-gap: 16px;
+        div {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .copyright {
+      row-gap: 16px;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 1271px) {
+    .copyright {
+      justify-content: center;
+      padding: 16px 24px;
+      .left {
+        column-gap: 20px;
+        line-height: 24px;
+      }
+      .right {
+        row-gap: 10px;
+        .other {
+          column-gap: 8px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .copyright {
+      row-gap: 8px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 16px 10px;
+      .left {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+      }
+
+      .right {
+        row-gap: 5px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        div {
+          padding: 2px 0;
+        }
+        .icp {
+          column-gap: 15px;
+          justify-content: center;
+          .split:last-child {
+            display: none;
+          }
+        }
+        .other {
+          column-gap: 15px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .copyright {
+      .right {
+        .icp {
+          row-gap: 8px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .split {
+            display: none;
+          }
+        }
+        .other {
+          column-gap: 4px;
+        }
+      }
+    }
+  }
+}
