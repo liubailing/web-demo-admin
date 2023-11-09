@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 const BackToTop = () => {
   return (
     <BackToUp className={styles.backToTop} size={54} hideProgress>
-      <Icon name="#icon-shang" size={42}></Icon>
+      <Icon name="#icon-to-top" size={36}></Icon>
     </BackToUp>
   )
 }

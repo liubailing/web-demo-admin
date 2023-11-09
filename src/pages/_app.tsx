@@ -8,6 +8,7 @@ import Script from 'next/script'
 import Progress from 'nprogress'
 import { useEffect } from 'react'
 import { Middleware, SWRConfig } from 'swr'
+import withTheme from '../theme'
 
 const BackToTop = dynamic(() => import('@/components/back-to-top'), { ssr: false })
 
@@ -51,7 +52,7 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
   useRouterProgress()
 
   const getLayout = Component.getLayout ?? ((page) => page)
-  return (
+  return withTheme(
     <SWRConfig value={{ use: [swrErrorMiddleware] }}>
       <Script src="/iconfont.js" async />
       {getLayout(<Component {...pageProps} />)}

@@ -28,6 +28,7 @@ const nextConfig = {
   swcMinify: true,
   compiler: {
     removeConsole: process.env.APP_ENV == 'prd',
+    styledComponents: true,
   },
 }
 

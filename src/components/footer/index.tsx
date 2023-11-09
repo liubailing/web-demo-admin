@@ -13,31 +13,31 @@ const Footer = () => {
         <div className={styles.right}>
           <div className={styles.icp}>
             <div>
-              <Link href={'https://beian.miit.gov.cn/#/Integrated/index'}>粤ICP备11111111号</Link>
+              <Link href={'https://beian.miit.gov.cn/#/Integrated/index'}>粤ICP备 123456 号</Link>
             </div>
             <span className={styles.split}></span>
-            <div>粤公网安备 11111111111111号</div>
+            <div>粤公网安备 123456789 号</div>
             <span className={styles.split}></span>
           </div>
           <div className={styles.other}>
             <div>
-              <Link href={'/service'}>服务协议</Link>
+              <Link href={'/help/service'}>服务协议</Link>
             </div>
             <span className={styles.split}></span>
             <div>
-              <Link href={'/privacy'}>隐私协议</Link>
+              <Link href={'/help/privacy'}>隐私协议</Link>
             </div>
             <span className={styles.split}></span>
             <div>
-              <Link href={'/version'}>版本</Link>
+              <Link href={'/help/version'}>版本</Link>
             </div>
             <span className={styles.split}></span>
             <div>
-              <Link href={'/developer'}>开发者名称</Link>
+              <Link href={'/help/developer'}>开发者名称</Link>
             </div>
             <span className={styles.split}></span>
             <div>
-              <Link href={'/authority'}>权限</Link>
+              <Link href={'/help/authority'}>权限</Link>
             </div>
           </div>
         </div>

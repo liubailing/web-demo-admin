@@ -1,6 +1,6 @@
 import api from '@/utils/api'
 import useSWR from 'swr'
-import { AccountData, Resp } from './structure'
+import { AccountData } from './structure'
 
 
 export function useAccount(refreshInterval?: number) {
@@ -28,10 +28,3 @@ export function useAccount(refreshInterval?: number) {
     },
   })
 }
-
-/** 用户咨询 */
-export function userConsult(params: { [key: string]: string }) {
-  const key = `/v1/accounts/userconsult`
-  return api.post<void, Resp<unknown>>(key, { ...params })
-}
-

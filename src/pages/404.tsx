@@ -1,6 +1,5 @@
 import CustomHead from '@/components/custom-head'
 import Error from '@/components/error'
-import { getLayout } from '@/components/layout'
 import Link from 'next/link'
 
 export default function Custom404() {
@@ -18,4 +17,4 @@ export default function Custom404() {
   )
 }
 
-Custom404.getLayout = getLayout
+// Custom404.getLayout = getLayout
