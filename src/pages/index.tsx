@@ -12,7 +12,7 @@ const Page = () => {
       </Head>
       <div className={styles.home}>
         <div className={styles.logo}>
-          <Icon name="#icon-octopus" size={196}></Icon>
+          <Icon name="#icon-logo-1" size={196}></Icon>
         </div>
       </div>
     </div>

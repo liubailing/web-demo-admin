@@ -1,5 +1,4 @@
 // import ProLayout from '@ant-design/pro-layout'
-import { LogoutOutlined } from '@ant-design/icons'
 import { Dropdown } from 'antd'
 import dynamic from 'next/dynamic'
 import router from 'next/router'
@@ -17,10 +16,10 @@ const Main = ({ children }: PropsWithChildren) => {
       <ProLayout
         fixSiderbar={true}
         layout={'mix'}
-        title="八爪鱼"
+        title="后台管理系统"
         logo={
           <div>
-            <Icon name="#icon-octopus" size={48}></Icon>
+            <Icon name="#icon-logo-3" size={48}></Icon>
           </div>
         }
         // splitMenus={true}
@@ -35,9 +34,10 @@ const Main = ({ children }: PropsWithChildren) => {
           collapsedShowGroupTitle: true,
         }}
         avatarProps={{
-          src: 'https://gw.alipayobjects.com/zos/antfincdn/efFD%24IOql2/weixintupian_20170331104822.jpg',
+          src: '',
+          icon: <Icon name="#icon-logo-2" size={26}></Icon>,
           size: 'small',
-          title: '七妮妮',
+          title: '小八家',
           render: (props, dom) => {
             return (
               <Dropdown
@@ -45,7 +45,7 @@ const Main = ({ children }: PropsWithChildren) => {
                   items: [
                     {
                       key: 'logout',
-                      icon: <LogoutOutlined rev={undefined} />,
+                      // icon: <LogoutOutlined rev={undefined} />,
                       label: '退出登录',
                     },
                   ],
@@ -79,12 +79,15 @@ const Main = ({ children }: PropsWithChildren) => {
                 textAlign: 'center',
                 display: 'flex',
                 justifyContent: 'center',
-                flex: '1 1',
+                columnGap: 40,
                 paddingBlockStart: 12,
               }}
             >
               <a href="/" target="_blank">
                 官网
+              </a>
+              <a href="/" target="_blank">
+                api
               </a>
             </p>
           )

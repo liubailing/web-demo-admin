@@ -6,6 +6,7 @@ const Page = () => {
   return (
     <PageContainer header={{ title: '' }} breadcrumb={{ separator: '--' }}>
       <CustomHead title="test" keywords="" description="" />
+      <div>test - module</div>
     </PageContainer>
   )
 }

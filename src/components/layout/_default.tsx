@@ -1,56 +1,50 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { CrownFilled, TabletFilled } from '@ant-design/icons'
 import Icon from '../icon'
 
-export default {
+const routes = {
   route: {
     path: '/',
     routes: [
       {
         path: '/welcome',
         name: '欢迎',
-        icon: <Icon name="#icon-octopus"></Icon>,
-        component: './Welcome',
+        icon: <Icon name="#icon-king"></Icon>,
+        component: './test',
       },
       {
-        path: '/admin',
+        path: '/test',
         name: '管理页',
-        icon: <CrownFilled rev={undefined} />,
+        icon: <Icon name="#icon-team-1"></Icon>,
         access: 'canAdmin',
-        component: './Admin',
+        component: './test',
         routes: [
           {
-            path: '/module',
+            path: '/test',
             name: '一级页面',
-            component: './Welcome',
+            component: './test',
           },
           {
-            path: '/module2',
+            path: '/test/module',
             name: '二级页面',
-            component: './Welcome',
-          },
-          {
-            path: '/module2/test',
-            name: '三级页面',
-            component: './Welcome',
+            component: './test',
           },
         ],
       },
       {
         name: '列表页',
-        icon: <TabletFilled rev={undefined} />,
-        path: '/list',
-        component: './ListTableList',
+        icon: <Icon name="#icon-dialogue"></Icon>,
+        path: '/test2',
+        component: './test2',
         routes: [
           {
-            path: '/list/sub-page2',
-            name: '二级列表页面',
-            component: './Welcome',
+            path: '/test/list',
+            name: '一级测试页面',
+            component: './test2',
           },
           {
-            path: '/list/sub-page3',
-            name: '三级列表页面',
-            component: './Welcome',
+            path: '/test/module',
+            name: '二级测试页面',
+            component: './test2',
           },
         ],
       },
@@ -60,3 +54,5 @@ export default {
     pathname: '/',
   },
 }
+
+export default routes

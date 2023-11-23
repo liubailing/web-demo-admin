@@ -1,0 +1,20 @@
+include:
+  - project: 'bazhuayu/devops/pipeline-templates'
+    ref: develop
+    file:
+      - 'node/templates/generic-template.yml'
+
+# 配置默认项目
+variables:
+  APP_NAME: bzy-official-web
+  PROJECT: bzy
+  TENANT:
+    description: "该值决定发布环境"
+    value: "bzy"
+    options:
+      - bzy
+  LOCALE:
+    description: "该值决定前端构建运行时所使用的LOCALE(无需求默认值即可)"
+    value: "zh-CN"
+    options:
+      - zh-CN

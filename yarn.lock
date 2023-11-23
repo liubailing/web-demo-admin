@@ -236,11 +236,6 @@
   dependencies:
     glob "7.1.7"
 
-"@next/font@13.4.7":
-  version "13.4.7"
-  resolved "https://registry.npmmirror.com/@next/font/-/font-13.4.7.tgz#32f9e2c4a856e23370d2be4b46eddaccce11b88d"
-  integrity sha512-l28ifb3pjKznQeXmiCD5VXkmqdpMrcUQMr4ZChAgTKrjckl/aGyRLOIlL/ABhTHmzMujdt/TTWUsdABArNK5gA==
-
 "@next/swc-darwin-arm64@14.0.1":
   version "14.0.1"
   resolved "https://registry.npmmirror.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.1.tgz#75a5f872c4077ecd536d7496bc24f3d312d5dcd0"
